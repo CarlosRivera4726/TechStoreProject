@@ -45,7 +45,7 @@ export interface IProduct {
     price: number;
     discount: number;
     delivery: IDelivery;
-    'main-image': string;
+    'main_image': string;
     multimedia: string[];
     specifications: ISpecifications;
     about: IAboutSection[];
