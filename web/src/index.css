@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input:invalid {
+    background-color: white;
+}
