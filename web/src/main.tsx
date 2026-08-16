@@ -1,7 +1,11 @@
+import './index.css'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App'
+import HeaderComponent from './components/HeaderComponent'
+import App from './pages/App/App'
+import { BrowserRouter, Route, Router, RouterProvider, Routes } from 'react-router'
+import LoginComponent from './pages/login/Login.page'
+import { router } from './router/main.router'
 
 const rootElement = document.getElementById('root')
 
@@ -11,6 +15,6 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>,
 )
