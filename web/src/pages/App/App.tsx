@@ -24,7 +24,7 @@ function App() {
       setTimeout(() => revalidate({ retryCount }), 5000)
     },
     onError: (error, key) => {
-      if (error.message === 'Network Error' || error.status === 404) {
+      if (error.message === 'Network Error') {
         alert("no se ha podido comunicar con la bd, temporalmente desconectada y se va a usar datos locales")
         setProducts(jsonProducts)
       }
