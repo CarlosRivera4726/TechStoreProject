@@ -4,7 +4,8 @@
   "description": "This is my monorepo using pnpm workspaces to create TechStoreProject with a backend and frontend.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "api": "pnpm --filter api start:dev",
+    "web": "pnpm --filter web dev"
   },
   "keywords": [],
   "author": "",
