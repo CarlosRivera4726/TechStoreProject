@@ -8,7 +8,9 @@ export default function HeaderComponent() {
 
     return (
         <header className="min-h-20 max-h-20 flex items-center justify-between gap-4 p-4 bg-gray-100">
-            <span className="font-semibold">TechStore</span>
+            <NavLinkComponent to="/" className="font-bold text-2xl">
+                <span className="font-bold text-2xl">Tech<span className="text-blue-500">Store</span></span>
+            </NavLinkComponent>
 
             {currentPath === "/" && (
                 <div className="flex-1 flex justify-center">
