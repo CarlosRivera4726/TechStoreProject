@@ -1,8 +1,9 @@
+
+import HeaderComponent from "@components/Header.component";
+import App from "@pages/App/App";
+import LoginPage from "@pages/login/Login.page";
+import RegisterPage from "@pages/register/register.page";
 import { Outlet, createBrowserRouter } from "react-router";
-import App from "../pages/App/App";
-import LoginPage from "../pages/login/Login.page";
-import HeaderComponent from "../components/HeaderComponent";
-import RegisterPage from "../pages/register/register.page";
 
 function RootLayout() {
     return (

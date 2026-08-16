@@ -21,7 +21,25 @@
         "jsx": "react-jsx",
         "types": [
             "vite/client"
-        ]
+        ],
+        "baseUrl": "./",
+        "paths": {
+            "@router/*": [
+                "src/router/*"
+            ],
+            "@components/*": [
+                "src/components/*"
+            ],
+            "@interfaces/*": [
+                "src/interfaces/*"
+            ],
+            "@pages/*": [
+                "src/pages/*"
+            ],
+            "@config/*": [
+                "src/config/*"
+            ]
+        }
     },
     "include": [
         "src",

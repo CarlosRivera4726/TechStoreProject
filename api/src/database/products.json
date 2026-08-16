@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "name": "Laptop",
+        "description": "A high-performance laptop for work and play.",
+        "vendor": {
+            "name": "TechStore",
+            "rating": 4.5,
+            "reviews": 120
+        },
+        "price": 999.99,
+        "discount": 0.1,
+        "delivery": {
+            "time": "3-5 business days",
+            "cost": 15.00
+        },
+        "main-image": "https://example.com/laptop.jpg",
+        "multimedia": [
+            "https://example.com/laptop1.jpg",
+            "https://example.com/laptop2.jpg",
+            "https://example.com/laptop3.jpg",
+            "https://example.com/laptop4.mp4"
+        ],
+        "specifications": {
+            "brand": "HP Pavilion 15",
+            "model_name": "Model 2024",
+            "processor": "Intel Core i7-12700H",
+            "ram": "16GB DDR4",
+            "storage": "512GB SSD",
+            "graphics_card": [
+                {
+                    "vendor": "NVIDIA GeForce RTX 3060",
+                    "type": "Dedicated",
+                    "memory": "6GB GDDR6"
+                },
+                {
+                    "vendor": "Intel UHD Graphics",
+                    "type": "Integrated",
+                    "memory": "Shared"
+                }
+            ],
+            "display": "15.6-inch Full HD (1920x1080) IPS",
+            "operating_system": "Windows 11 Home",
+            "special_features": [
+                "Backlit Keyboard",
+                "Fingerprint Reader",
+                "Wi-Fi 6",
+                "Bluetooth 5.2"
+            ]
+        },
+        "about": [
+            {
+                "title": "Performance",
+                "content": "Equipped with the latest processor and graphics card for smooth multitasking and gaming."
+            },
+            {
+                "title": "Design",
+                "content": "Sleek and lightweight design, perfect for on-the-go use."
+            },
+            {
+                "title": "Battery Life",
+                "content": "Up to 12 hours of battery life for all-day productivity."
+            }
+        ],
+        "payment": {
+            "methods": [
+                "Credit Card",
+                "PayPal",
+                "Apple Pay",
+                "Debit Card"
+            ],
+            "installments": true
+        },
+        "alternatives": []
+    }
+]

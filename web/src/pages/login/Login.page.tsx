@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import { useForm } from "react-hook-form";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import NavLinkComponent from "../../components/NavLink.component";
+import NavLinkComponent from "@components/NavLink.component";
 
 interface Inputs {
     email: string;

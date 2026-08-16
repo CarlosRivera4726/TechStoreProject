@@ -1,14 +1,31 @@
-import { useState } from 'react'
-import { useLocation } from 'react-router'
-function App() {
-  const path = useLocation();
+import useSWR from 'swr'
+import axios from "axios"
+import { IProduct } from '@interfaces/product.interface';
+import CardComponent from '@components/Card.component';
+import { EnvironmentVariables } from '@config/environment.variables.config';
 
-  console.log('Current path:', path.pathname); // Log the current path to the console
+const fetcher = (url: string) => axios.get(url).then(res => res.data).catch(err => err)
+
+
+function App() {
+  // const path = useLocation();
+  const variables = new EnvironmentVariables();
+  const { data, error, isLoading } = useSWR(`${variables.API_URL}/products`, fetcher)
+
+  console.log({
+    data,
+    error,
+    isLoading
+  })
 
   return (
     <>
       <div>
-        default
+        {data && (
+          data.map((product: IProduct) => {
+            <CardComponent product={product} />
+          })
+        )}
       </div>
     </>
   )

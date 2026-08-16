@@ -1,6 +1,6 @@
 import { useLocation } from "react-router";
 import NavLinkComponent from "./NavLink.component";
-import SearchComponent from "./SearchComponent";
+import SearchComponent from "./Search.component";
 
 export default function HeaderComponent() {
     const path = useLocation();
